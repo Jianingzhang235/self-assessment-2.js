@@ -1,0 +1,79 @@
+//Exercise 1 (numbers)
+
+function calculateTotalWithTax (subTotal) {
+  var totalWithTax = subTotal * (1 + 0.0975);
+  return totalWithTax;
+}
+
+
+//Exercise 2 (arrays, loops, and numbers)
+function countBy (number) {
+  var numArr = [];
+  for(i = 1; i <= 5; i++) {
+    numArr.push(number * i);
+  }
+  return numArr;//your code here   
+}
+
+
+//Exercise 3 (arrays)
+
+function getFirst5 (inputArr) {
+  var newArr = inputArr.slice(0, 5);
+  return newArr;//your code here   
+}
+
+//Exercise 4 (objects, strings)
+
+function bankAccountChecker (bankingInfo, account) {
+  return "You have $"+ bankingInfo[account] + " in your " + account + " account"
+}
+var account001 = {
+  checking: 1000000,
+  savings: 2
+};
+
+var account002 = {
+  business: 2000000,
+  personal: -4
+};
+
+var account003 = {
+  travel: 534,
+  education: 1012
+};
+
+
+//Exercise 5 (objects, conditionals)
+
+function notificationDisplay (appObject) {
+  if (appObject.notifications <= 99) {
+    return String(appObject.notifications);
+  }
+  if (appObject.notifications > 99) {
+    return '99+';
+  }
+}
+
+
+//Exercise 6 (arrays, numbers)
+
+function tripleAllNumbers (numbers) {
+  var newArr = [];
+  for (i = 0; i < numbers.length; i++) {
+  newArr.push(numbers[i] * 3);
+  }
+  return newArr;
+}
+
+
+//Exercise 7 (conditionals, strings)
+
+function robotBarBouncer (name, age) {
+  var greeting = '';
+  if (age >= 22) {
+    return greeting = "Welcome, " + name + "!";
+  } else {
+    return greeting ="Sorry, " + name + ". We can't serve people under 21."
+  }
+}
