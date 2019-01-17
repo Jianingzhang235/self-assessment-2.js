@@ -77,3 +77,51 @@ function robotBarBouncer (name, age) {
     return greeting ="Sorry, " + name + ". We can't serve people under 21."
   }
 }
+
+
+//OUT OF ONE Hour:
+
+//Exercise 8 (objects)
+
+function shareFavoriteDessert () {
+  var name = "Flan", countryOfOrigin = "Spain", delicious = true, amountEatenInMyLifetime = "not enough";
+  return {name, countryOfOrigin, delicious, amountEatenInMyLifetime};
+}
+
+//Exercise 9 (numbers, strings)
+function inchesConverter (inches) {
+  return  Math.floor(inches / 12) + ' feet ' + inches % 12 +' inches';
+}
+
+
+
+
+//Exercise 10 (objects, arrays, loops)
+function displayOptions (displayDevice) {
+  var trueArr = [];
+  for(var key in displayDevice) {
+    if(displayDevice[key] === true) {
+      trueArr.push(key);
+    }
+  } 
+  return trueArr;//your code here
+}
+var televisionA = {
+  VGA: false,
+  HDMI1: true,
+  HDMI2: true
+}
+var monitor001 = {
+  VGA: true,
+  DVI: false,
+  HDMI1: true,
+  HDMI2: true
+}
+var monitor002 = {
+  HDMI1: true,
+  HDMI2: true,
+  DVI: true
+}
+console.log(displayOptions(televisionA));
+console.log(displayOptions(monitor001));
+console.log(displayOptions(monitor002));
