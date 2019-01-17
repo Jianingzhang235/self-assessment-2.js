@@ -38,6 +38,35 @@ var account002 = {
   personal: -4
 };
 
+// Exercise 3
+ function indexOfLargest (numbers) {
+   for(var i in numbers) {
+     if (numbers[i] === Math.max(...numbers)) {
+        return i;
+     }
+  }   
+ }
+//Exercise 4
+function largerThan1000 (money) {
+  var arr1 = money.split("");
+  arr1.splice(0, 1);
+  var str = arr1.join("");
+  var num = Number(str);
+  if (num > 1000) {
+    return true;
+  } else {
+    return false;
+  }
+}
+//Exercise 5
+function isLonger (length1, length2) {
+  if(Number(length1.slice(4, -1)) > Number(length2.slice(4, -1))){
+    return true;
+  } else {
+    return false;
+  }
+}
+
 var account003 = {
   travel: 534,
   education: 1012
