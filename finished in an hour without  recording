@@ -187,4 +187,11 @@ var people = [
 ]; 
 whoWillBeAtLeast30(people);
 
+function isLonger (length1, length2) {
+  if(Number(length1.slice(4, -1)) > Number(length2.slice(4, -1))){
+    return true;
+  } else {
+    return false;
+  }
+}
 
