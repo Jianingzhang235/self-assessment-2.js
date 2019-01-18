@@ -22,6 +22,14 @@ function getFirst5 (inputArr) {
   var newArr = inputArr.slice(0, 5);
   return newArr;//your code here   
 }
+//Exercise 3
+function indexOfLargest (numbers) {
+  for(var i in numbers) {
+    if (numbers[i] === Math.max(...numbers)) {
+      return i;
+    }
+  }   
+}
 
 //Exercise 4 (objects, strings)
 
